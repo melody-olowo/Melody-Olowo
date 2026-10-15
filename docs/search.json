@@ -33,5 +33,75 @@
     "title": "CV",
     "section": "Experience",
     "text": "Experience\nEconomics honors | student at the university of winnipeg | August 2021 - Present\nStudent Ambassador | Student Recruitment at University of Winnipeg | June 2025 - Present\nVolunteer work | Children school, Food Bank | 2021 - 2023\nBank of Canada Challenge | Presenter | september 2026 - present"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "ECON 3201\nEconometrics for Economics and Finance\n\n\n\n\n\nMelody_Olowo\n\n\n:::\n\n:::\n:::\nNo matching items\n:::\n:::"
+  },
+  {
+    "objectID": "posts/econ_3201_a1.html",
+    "href": "posts/econ_3201_a1.html",
+    "title": "ECON 3201\nEconometrics for Economics and Finance",
+    "section": "",
+    "text": "Answer all questions. Please complete your assignment using Quarto. Submit both your Quarto file and pdf output file."
+  },
+  {
+    "objectID": "posts/econ_3201_a1.html#q1",
+    "href": "posts/econ_3201_a1.html#q1",
+    "title": "ECON 3201\nEconometrics for Economics and Finance",
+    "section": "1.1 Q1",
+    "text": "1.1 Q1\nCreate a personal Quarto website hosted on GitHup pages. For reference, please see the slides for website on Nexus. Your website should include the following:\n\nAn “Index” or “Home” page. This page should include the following:\n\nYour name\nYour photo (optional)\nYour credentials\nAn “About Me” section that provides a brief (one paragraph) introduction to yourself. [10 Marks]\n\nA blog page. This will be the landing site for future assignments [5 Marks]\nCreate a blog post and upload the finished PDF for this assignment. [3 Marks]\nNavigation bar with “Home” and “Blog” buttons. The navigation bar is edited in the “_quarto.yml” file. [2 Marks]\n\n\n\n\n\n\n\nPaste your link here"
+  },
+  {
+    "objectID": "posts/econ_3201_a1.html#q2",
+    "href": "posts/econ_3201_a1.html#q2",
+    "title": "ECON 3201\nEconometrics for Economics and Finance",
+    "section": "1.2 Q2",
+    "text": "1.2 Q2\nWrite your solutions using LaTeX. Show your work. You may use R to compute the answers.\nLet \\(X=\\{1,2,3,4,5,6,7,8,9,10,11,12\\) be a uniformly distributed variable with probability distribution function \\(f_X(x)=1/12\\).\n\n\nCheck that \\(f_X(x)\\) is a true probability distribution.\n\n\n\n\n\n\n\n\n\\[\\sum_{i=1}^{12}f_X(x)=1\\]\n\n\nCode\nf &lt;- rep(1/12,12)\nsum(f)\n\n\n[1] 1\n\n\n\\(\\frac{1}{12}+\\frac{1}{12}+\\frac{1}{12}.....+\\frac{1}{12}=1\\)\n\n\n\n\n\nCompute the expected value of \\(X\\).\n\n\n\n\n\n\n\n\n\\[{E}[X]=\\sum_{i=1}^{12}~x_i\\*f_X(x)\\]\n\n\nCode\n# Expected value of X\nx &lt;-1:12\nf &lt;- rep(1/12,12)\n\nexpected_value &lt;- sum(x * f)\nexpected_value\n\n\n[1] 6.5\n\n\n\n\n\n\\({E}[X]=1*\\frac{1}{12} + 2*\\frac{1}{12}+3*\\frac{1}{12}.....12*\\frac{1}{12}=6.5\\)\n\nCompute the variance of \\(X\\).\n\n\n\n\n\n\n\n\\[{Var}[X]=\\sum_{i=1}^{12} (x_i-{E}[X])^2*f_i\\]\n\n\nCode\n# Calculate variance\nx &lt;-1:12\nf &lt;-rep(1/12,12)\nexpected_value &lt;-6.5\nvar &lt;- sum((x-6.5)^2*f)\nvar\n\n\n[1] 11.91667\n\n\n\\({Var}[X]=(1-6.5)^2 *\\frac{1}{12} + (2-6.5)^2*\\frac{1}{12}+.....+(12-6.5)^2*\\frac{1}{12}=11.91667\\)"
+  },
+  {
+    "objectID": "posts/econ_3201_a1.html#q3",
+    "href": "posts/econ_3201_a1.html#q3",
+    "title": "ECON 3201\nEconometrics for Economics and Finance",
+    "section": "1.3 Q3",
+    "text": "1.3 Q3\nLet \\(X\\sim N(4,5)\\). Find the probability of each event:\n\n\\(Pr(X\\leq6)\\)\n\n\n\n\n\n\n\n\\[X\\sim N(4,5)\\Pr(X \\leq 6)\\]\n\n\nCode\n# Let X ~ N(4, 5)\n# Mean = 4, Var=5 Sd = sqrt(5)\n# P(X &lt;- 6)\npnorm(6, mean = 4, sd = sqrt(5))\n\n\n[1] 0.8144533\n\n\n\n\n\n\n\\(Pr(X&gt;4)\\)\n\n\n\n\n\n\n\n\\[X\\sim N(4,5)\\Pr(X &gt; 4)\\]\n\n\nCode\n# Let X ~ N(4, 5)\n# Mean = 4, Var=5 Sd = sqrt(5)\n# P(X &lt;- 4)\npnorm(4, mean = 4, sd = sqrt(5))\n\n\n[1] 0.5\n\n\n\n\n\n\n\\(Pr(-1\\leq X&lt; 1)\\)\n\n\n\n\n\n\n\n\\[X\\sim N(4,5)\\Pr(-1\\leq X&lt; 1\\]\n\n\nCode\n# Let X ~ N(4, 5)\n# Mean = 4, Var=5 Sd = sqrt(5)\n# P(X &lt;- -1,1)\npnorm(1, mean = 4, sd = sqrt(5)) -\n  pnorm(-1, mean = 4, sd = sqrt(5))\n\n\n[1] 0.07718259"
+  },
+  {
+    "objectID": "posts/econ_3201_a1.html#q4",
+    "href": "posts/econ_3201_a1.html#q4",
+    "title": "ECON 3201\nEconometrics for Economics and Finance",
+    "section": "1.4 Q4",
+    "text": "1.4 Q4\nLet \\(Z\\sim N(0,1)\\).\n\nCompute \\(Pr(Z\\leq 0.83)\\)\n\n\n\n\n\n\n\n\\[Z\\sim N(0,1)\\Pr(Z\\leq 0.83)\\]\n\n\nCode\n# Let Z ~ N(0, 1)\n# Mean = 0, Var=1 Sd = sqrt(1)\n# P(Z &lt;- 0.83))\npnorm(0.83, mean=4, sd=sqrt(5))\n\n\n[1] 0.07814399\n\n\n\n\n\n\nCompute \\(Pr(-0.83 \\leq Z\\leq 0.83)\\)\n\n\n\n\n\n\n\n\\[Z\\sim N(0,1)\\Pr(-0.83\\leq Z&lt; 0.83)\\]\n\n\nCode\n# Let Z ~ N(0,1)\n# Mean = 0, Var=1 Sd = sqrt(1)\n# Pz &lt;- --0.83,0.83)\npnorm(0.83, mean=0, sd= sqrt(1)) - \n        pnorm(-0.83, mean=0, sd = sqrt(1))\n\n\n[1] 0.5934612"
+  },
+  {
+    "objectID": "posts/econ_3201_a1.html#q5",
+    "href": "posts/econ_3201_a1.html#q5",
+    "title": "ECON 3201\nEconometrics for Economics and Finance",
+    "section": "2.1 Q5",
+    "text": "2.1 Q5\nLet \\(X=\\{1,2,3,4,5,6,7,8,9,10,11,12\\) be a uniformly distributed variable with probability distribution function \\(f_X(x)=1/12\\).\n\nPlot the probability distribution function \\(f_X(x)\\) in R.\n\n\n\n\n\n\n\n\\[X=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}\\,f_X(x)=1/12\\]\n\n\nCode\n# Define the sample space and probabilities\nx &lt;- 1:12\nf &lt;- rep(1/12, 12)\n# Plot the discrete probability distribution\nplot(x, f,\n     type = \"h\",\n     lwd = 5,\n     col = \"lightpink\",\n     main = \"Probability Mass Function of X\",\n     xlab = \"x\",\n     ylab = \"P(X = x)\",\n     ylim = c(0, 0.1))\n\npoints(x, f, col = \"purple\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlot the cumulative probability distribution function \\(f_X(x) in R\\).\n\n\n\n\n\n\n\n\\[F_X(x)=P(X\\leq x)=\n\\begin{cases}\n0, & x&lt;1,\\\\\n\\frac{x}{12}, & 1\\leq x&lt;12,\\\\\n1, & x\\geq 12.\n\\end{cases}\\]\n\n\nCode\n# Define the cumulative probabilities\nx &lt;- 1:12\ncdf &lt;- cumsum(rep(1/12, 12))\n# Plot the CDF\nplot(x, cdf,\n     type = \"s\",\n     lwd = 5,\n     col = \"lightpink\",\n     main = \"cumulative probability function of X\",\n     xlab = \"x\",\n     ylab = \"f(x)\",\n     ylim = c(0, 1))\n\npoints(x, cdf, col = \"purple\", pch = 4)\n\n\n\n\n\n\n\n\n\n```\n\n\n\n\nCompute the expected value of \\(X\\) in R.\n\n\n\n\n\n\n\n\n\nCode\n# Compute expected value: E[X] = sum(x * P(X=x))\nx &lt;- 1:12\npmf &lt;- rep(1/12, 12)\nexpected_value &lt;- sum(x * pmf)\nexpected_value\n\n\n[1] 6.5\n\n\n\n\n\n\nCompute the variance of \\(X\\) in R.\n\n\n\n\n\n\n\n\n\nCode\n# Compute variance: Var(X) = E[X^2] - (E[X])^2\nx &lt;- 1:12\npmf &lt;- rep(1/12, 12)\nexpected_value &lt;- sum(x * pmf)\n\nvariance &lt;- sum((x^2) * pmf) - (expected_value)^2\nvariance\n\n\n[1] 11.91667"
+  },
+  {
+    "objectID": "posts/econ_3201_a1.html#q6",
+    "href": "posts/econ_3201_a1.html#q6",
+    "title": "ECON 3201\nEconometrics for Economics and Finance",
+    "section": "2.2 Q6",
+    "text": "2.2 Q6\nThe standard normal distribution function is given by \\[f(x)=\\frac{e^{-(x^2/2)}}{\\sqrt{2\\pi}\\sigma}\\]\n\nterm\n\n\n\n\n\nDefine this function in R. (Note: \\(\\pi\\) is coded as pi and \\(e\\) is coded as exp.\n\n\n\n\n\n\n\n\n\nCode\n#Define the standard Normal Distribution\nf &lt;- function(x)\n  exp(-(x^2)/2) / sqrt(2*pi*1)\nprint(f)\n\n\nfunction (x) \nexp(-(x^2)/2)/sqrt(2 * pi * 1)\n\n\n\n\n\n\nIntegrate this function over the limit [\\(-\\infty,\\infty\\)] using the integrate() command in R. Infinity in R is written as Inf. To evaluate the integral, use integrate()$value\n\n\n\n\n\n\n\n\n\nCode\nintegral&lt;-integrate(f,-Inf,Inf)$value\n\nintegral\n\n\n[1] 1\n\n\n\n\n\n\nCompute the expected value of the standard normal distribution in R and confirm it is equal to 0.\n\n\n\n\n\n\n\n\n\nCode\n# Expected value of a f\n# Integrate from negative infinity to positive infinity\nexpected_value_normal&lt;- integrate(function(x) x * f(x), -Inf, Inf)$value\nexpected_value_normal\n\n\n[1] 0\n\n\n\n\n\n\nCompute the variance of the standard normal distribution in R and confirm it is equal to 1.\n\n\n\n\n\n\n\n\n\nCode\n#Variance of f\n# Integrate from negative infinity to positive infinity\nvariance&lt;- integrate(function(x) x^2 * f(x), -Inf, Inf)$value\nvariance\n\n\n[1] 1\n\n\n\n\n\n\nCompute \\(Pr(Z\\leq 0.83)\\)\n\n\n\n\n\n\n\n\n\nCode\nintegrate(f, -Inf, 0.83)$value\n\n\n[1] 0.7967306\n\n\n\n\n\n\nCompute \\(Pr(-0.83 \\leq Z\\leq 0.83)\\)\n\n\n\n\n\n\n\n\n\nCode\nintegrate(f, -0.83, 0.83)$value\n\n\n[1] 0.5934612\n\n\n\n\n\n\nCompute \\(Pr(-0.83 \\leq Z\\leq 0.83)\\) using the pnorm() command and compare your results to (f).\n\n\n\n\n\n\n\n\n\nCode\npnorm(0.83)- pnorm(-0.83)\n\n\n[1] 0.5934612"
+  },
+  {
+    "objectID": "posts/econ_3201_a1.html#q7",
+    "href": "posts/econ_3201_a1.html#q7",
+    "title": "ECON 3201\nEconometrics for Economics and Finance",
+    "section": "2.3 Q7",
+    "text": "2.3 Q7\nLet \\(X\\) denote the prison sentence, in years, for people convicted of auto theft in a particular province in Canada. Suppose the PDF of \\(X\\) is given by: \\[f(X)=\\frac{1}{9}x^2,\\text{ }0&lt;x&lt;3.\\]\n\nDefine \\(f(x)\\) in R.\n\n\n\n\n\n\n\n\n\nCode\n#Define the PDF\n#Define the standard Normal Distribution\nf &lt;- (f (x))\nf &lt;- function(x)\n  x^2/9\nprint(f)\n\n\nfunction (x) \nx^2/9\n\n\n\n\n\n\nIntegrate \\(f(x)\\) over the interval [0,3].\n\n\n\n\n\n\n\n\n\nCode\nintegral&lt;-integrate(f,0,3)$value\n\nintegral\n\n\n[1] 1\n\n\n\n\n\n\nCompute the expected prison sentence.\n\n\n\n\n\n\n\n\n\nCode\n# Expected value of a f\n# Integrate from 0 to 3\nexpected_value_normal&lt;- integrate(function(x) x*  x^2/9, 0, 3)$value\nexpected_value_normal\n\n\n[1] 2.25"
+  },
+  {
+    "objectID": "posts/econ_3201_a1.html#q8",
+    "href": "posts/econ_3201_a1.html#q8",
+    "title": "ECON 3201\nEconometrics for Economics and Finance",
+    "section": "2.4 Q8",
+    "text": "2.4 Q8\nLet \\(X\\) follow a Student \\(t\\) distribution with \\(M\\) degrees of freedom. Then \\[X=\\frac{Z}{\\sqrt{W/M}}\\sim t_M,\\] where \\(Z\\) is a standard normal variable and \\(W\\) is a chi-squared variable with \\(M\\) degrees of freedom.\n\nOn the same figure plot the following:\n\nPlot the standard normal probability distribution using curve(). Specify the range as [-5,5] using xlim. Name the ylab “Density”. The main title should be “Densities of t Distribution”.\nPlot the Student t distribution with 5 degrees of freedom using curve() and dt(). Specify the range as [-5,5] using xlim. Choose a different colour, i.e. col=2. To learn more about dt, type ?dt in your console.\nPlot the Student t distribution with 15 degrees of freedom using curve() and dt(). Specify the range as [-5,5] using xlim. Choose a different colour, i.e. col=3. To learn more about dt, type ?dt in your console.\nPlot the Student t distribution with 25 degrees of freedom using curve() and dt(). Specify the range as [-5,5] using xlim. Choose a different colour, i.e. col=4. To learn more about dt, type ?dt in your console.\nInclude the following legend in you plot:\nlegend(\"topright\",  c(\"N(0, 1)\", \"M=2\", \"M=4\", \"M=25\"),  col = 1:4,  lty = c(1, 1, 1, 1))\n\n\n\n\n\n\n\n\n\n\n\nCode\n# (a) Plot the standard normal and Student t distributions\n\n# (i) Standard Normal Distribution\ncurve(dnorm(x), from = -5, to = 5,\nxlab = c(-5,5), ylab = \"Density\",\nmain = \"Densities of t Distribution\",\ncol = \"1\")\n\n# (ii) Student T distribution, df=5\ncurve(dt(x, df =5),\n            from = 5, to = -5,\n            xlab = c(-5,5), ylab = \"Density\",\n            col = \"2\",add = TRUE)\n?dt\n\n# (iii) Student T distribution df=15\ncurve(dt(x, df = 15),\n            from = 5, to = -5,\n            xlab = c(-5,5), ylab = \"Density\",\n            col = \"3\", add = TRUE)\n?dt\n\n#(iv) Student T distribution df=25\ncurve(dt(x, df =25),\n            from = 5, to = -5,\n            xlab = c(-5,5), ylab = \"Density\",\n            col = \"4\",add = TRUE)\n?dt\n#(v) \nlegend(\"topright\",\n       c(\"N(0, 1)\", \"M=5\", \"M=15\", \"M=25\"),\n       col = 1:4,\n       lty = c(1, 1, 1, 1))\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat do you observe as the degrees of freedom increase?\n\n\n\n\n\n\n\nAs the degrees of freedom increase, the Student t distribution approaches the standard normal distribution. It also confirms the central limit theorm, that is as n becomes larger, the actual function becomes better appoximated by the normal distribution\n\n\n\n#quarto render econ_3201_a1.qmd –to pdf"
   }
 ]

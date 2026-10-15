@@ -10,7 +10,8 @@ website:
         text: Home
       - href: CV.qmd
         text: CV
-      
+      - href: posts.qmd
+        text: Blog
 
 format:
   html:
