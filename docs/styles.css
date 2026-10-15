@@ -1,1 +1,64 @@
 /* css styles */
+
+/* Overall website */
+body {
+  background-color: #f5f7fb;
+  color: #263238;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+/* Main headings */
+h1, h2, h3 {
+  color: #17365d;
+  font-weight: 700;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #17365d;
+}
+
+.navbar a,
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+
+/* Links */
+a {
+  color: #2463a6;
+}
+
+a:hover {
+  color: #c07840;
+}
+
+/* Blog listing cards */
+.quarto-grid-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e5ed;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 3px 10px rgba(20, 40, 70, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.quarto-grid-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Main content area */
+#quarto-content {
+  padding-top: 24px;
+}
+
+/* Code blocks */
+pre {
+  border-radius: 8px;
+  border: 1px solid #e0e5ed;
+}
+
+/* PDF links */
+a[href$=".pdf"] {
+  font-weight: 600;
+}
