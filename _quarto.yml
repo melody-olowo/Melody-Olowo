@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  output-file: docs
 
 website:
   title: "Melody Olowo"
@@ -8,6 +8,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: cv.qmd
+        text: CV
       
 
 format:
@@ -16,7 +18,7 @@ format:
       - cosmo
       - brand
     css: styles.css
-    toc: true
+    toc: TRUE
 
 editor: visual
 
