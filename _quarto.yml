@@ -1,6 +1,6 @@
 project:
   type: website
-  output-file: docs
+  output-dir: docs
 
 website:
   title: "Melody Olowo"
