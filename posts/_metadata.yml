@@ -1,0 +1,24 @@
+
+# Shared settings for blog posts and assignments
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    number-sections: true
+
+  pdf:
+    documentclass: article
+    toc: true
+    number-sections: true
+    geometry:
+      - margin=1in
+    colorlinks: true
+
+execute:
+  echo: true
+  warning: false
+  message: false
